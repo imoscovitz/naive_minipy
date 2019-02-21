@@ -48,20 +48,18 @@ ssfeat_posclass(df,y=y,class_feat=class_feat,pos_class=pos_class)numeric_feats=b
 Optional parameters:
 ```
 __save (default=True)__: autosave the minimized version
-__random_state (default=42)__: no effect
+__random_state (default=42)__: no effect on anything
 ```
 
-To run the minimized version,
-```
->>> python mybloatedcode_min.py
-File "mybloatedcode_min.py", line 1
-    importpandasaspdimportcopyimportmathimportwarningsfromwittgensteinimportbasefrom...
-    ^ SyntaxError: invalid syntax
-```
-
-And clock it,
+Let's clock the minified version:
 ```python
 >>> %timeit mybloatedcode_min.py
+
+File "mybloatedcode_min.py", line 1
+    importpandasaspdimportcopyimportmathimportwarningsfromwittgensteinimportbasefrom.baseimportCond,Rule,Rulesetfrom.baseimportrnd,fit_bin...
+
+    ^ SyntaxError: invalid syntax
+
 0.4 ns ± 0.102 ns per loop (mean ± std. dev. of 7 runs, 100000000 loops each)
 ```
 
