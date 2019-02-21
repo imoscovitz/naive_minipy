@@ -33,7 +33,7 @@ mybloatedcode.py
 mybloatedcode_min.py
 ```
 
-```
+```python
 >>> %cat 'mybloatedcode_min.py'
 
 importpandasaspdimportcopyimportmathimportwarningsfromwittgensteinimportbasefrom.baseimportCond,Rule,Rulesetfrom.baseimportrnd,fit_bins
@@ -47,13 +47,9 @@ ssfeat_posclass(df,y=y,class_feat=class_feat,pos_class=pos_class)numeric_feats=b
 
 Optional parameters:
 ```
-save (default=True):
+\textbf{save (default=True)}: autosave the minimized version
+\textbf{random_state (default=42)}: no effect
 ```
-autosave the minimized version
-```
-random_state (default=42):
-```
-no effect
 
 It's recursively compatible:
 
