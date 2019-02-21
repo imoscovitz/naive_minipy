@@ -22,6 +22,12 @@ Simply call .min to remove all docstrings, comments, and whitespace:
 >>> import naive_minipy as np
 >>> from naive_minipy import min
 >>> min('mybloatedcode.py')
+...
+```
+
+It will save and return a minimized version of your code:
+
+```python
 >>> %ls
 mybloatedcode.py
 mybloatedcode_min.py
@@ -39,7 +45,17 @@ ssfeat_posclass(df,y=y,class_feat=class_feat,pos_class=pos_class)numeric_feats=b
 ...
 ```
 
-naive_minipy is recursively compatible:
+Optional parameters:
+```
+save (default=True):
+```
+autosave the minimized version
+```
+random_state (default=42):
+```
+no effect
+
+It's recursively compatible:
 
 ```python
 >>> min('minipy.py')
