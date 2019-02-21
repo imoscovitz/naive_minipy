@@ -1,6 +1,6 @@
 # naive_minipy
 
-A side-effect-laden module for minimizing Python code by removing whitespace and comments
+A side-effect-laden module for minimizing Python code. It removes comments, docstrings, and whitespace.
 
 ## Installation
 
@@ -45,9 +45,9 @@ ssfeat_posclass(df,y=y,class_feat=class_feat,pos_class=pos_class)numeric_feats=b
 ...
 ```
 
-Optional parameters:
+Optional parameters include
 ```
-__save (default=True)__: autosave the minimized version
+__save (default=True)__: save the minimized version as a new file
 __random_state (default=42)__: no effect on anything
 ```
 
@@ -63,7 +63,7 @@ File "mybloatedcode_min.py", line 1
 0.4 ns ± 0.102 ns per loop (mean ± std. dev. of 7 runs, 100000000 loops each)
 ```
 
-It's recursively compatible:
+naive_minipy is recursively compatible:
 
 ```python
 >>> min('minipy.py')
