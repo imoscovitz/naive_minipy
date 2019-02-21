@@ -47,8 +47,8 @@ ssfeat_posclass(df,y=y,class_feat=class_feat,pos_class=pos_class)numeric_feats=b
 
 Optional parameters:
 ```
-__save (default=True)__: autosave the minimized version
-__random_state (default=42)__: no effect
+**save (default=True)**: autosave the minimized version
+**random_state (default=42)**: no effect
 ```
 
 It's recursively compatible:
