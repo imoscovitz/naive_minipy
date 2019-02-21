@@ -25,7 +25,7 @@ Simply call .min to remove all docstrings, comments, and whitespace:
 ...
 ```
 
-It will save and return a minimized version of your code:
+It will return and save a minimized version of your code:
 
 ```python
 >>> %ls
@@ -80,3 +80,8 @@ np also implements .score and .fit_score methods:
 >>> np.fit_score('minipy.py')
 You saved 904 bytes
 ```
+
+## Dependencies
+- re
+- warnings
+- pytorch
