@@ -47,8 +47,22 @@ ssfeat_posclass(df,y=y,class_feat=class_feat,pos_class=pos_class)numeric_feats=b
 
 Optional parameters:
 ```
-**save (default=True)**: autosave the minimized version
-**random_state (default=42)**: no effect
+__save (default=True)__: autosave the minimized version
+__random_state (default=42)__: no effect
+```
+
+To run the minimized version,
+```
+>>> python mybloatedcode_min.py
+File "mybloatedcode_min.py", line 1
+    importpandasaspdimportcopyimportmathimportwarningsfromwittgensteinimportbasefrom...
+    ^ SyntaxError: invalid syntax
+```
+
+And clock it,
+```python
+>>> %timeit mybloatedcode_min.py
+0.4 ns ± 0.102 ns per loop (mean ± std. dev. of 7 runs, 100000000 loops each)
 ```
 
 It's recursively compatible:
